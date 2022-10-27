@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,8 @@
 </head>
 <body>
     <?php
-    session_start();
+    var_dump($_REQUEST);
+    var_dump($_SESSION);
     if(isset($_REQUEST['id'])){
         if(isset($_SESSION['cart'])) {
             array_push($_SESSION['cart'], $_REQUEST['id']);
@@ -34,11 +38,11 @@
         }
         echo '<table>';
         $sum = 0;
-        foreach($_SESSION['cart'] as $id -> $cartItem) {
+        foreach($_SESSION['cart'] as $id => $cartItem) {
             echo '<tr>';
             echo '<td>'.$names[$cartItem].'</td>';
             echo '<td>'.$prices[$cartItem]. '</td>';
-            echo '<td><a href="zamowienia.php?remove='.$id.'"Usuń</a>';
+            echo '<td><a href="zamowienia.php?remove='.$id.'">Usuń</a></td>';
             echo '</tr>';
             $sum += $prices[$cartItem];
         }
@@ -59,6 +63,7 @@
         <input type="text" name="adress">
         <label for="phone">Numer telefonu:</label>
         <input type="text" name="phone">
+        <input type="submit" value="Zamów">
     </form>
 </body>
 </html>

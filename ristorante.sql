@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 27 Paź 2022, 14:02
--- Wersja serwera: 10.4.24-MariaDB
--- Wersja PHP: 8.0.19
+-- Czas generowania: 27 Paź 2022, 19:48
+-- Wersja serwera: 10.4.21-MariaDB
+-- Wersja PHP: 8.0.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,6 +34,18 @@ CREATE TABLE `dania` (
   `times_ordered` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Zrzut danych tabeli `dania`
+--
+
+INSERT INTO `dania` (`id`, `nazwa`, `cena`, `times_ordered`) VALUES
+(1, 'pizza', '20.00', 1),
+(2, 'pizza2', '24.99', 1),
+(3, 'makaron', '16.99', 0),
+(4, 'makaron2', '19.99', 1),
+(5, 'lasania', '35.99', 1),
+(6, 'lasania2', '39.99', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -58,6 +70,16 @@ CREATE TABLE `newsletter` (
   `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Zrzut danych tabeli `newsletter`
+--
+
+INSERT INTO `newsletter` (`id`, `email`) VALUES
+(1, 'kufelelo@gmail.com'),
+(2, 'kufelelo@gmail.com'),
+(3, 'kacper.kufel@tlen.pl'),
+(4, 'yes');
+
 -- --------------------------------------------------------
 
 --
@@ -69,6 +91,19 @@ CREATE TABLE `orderedfood` (
   `orderid` int(11) NOT NULL,
   `foodid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Zrzut danych tabeli `orderedfood`
+--
+
+INSERT INTO `orderedfood` (`id`, `orderid`, `foodid`) VALUES
+(7, 5, 1),
+(8, 5, 1),
+(9, 5, 2),
+(10, 5, 5),
+(11, 5, 5),
+(12, 5, 4),
+(13, 5, 4);
 
 -- --------------------------------------------------------
 
@@ -112,6 +147,14 @@ CREATE TABLE `zamowienia` (
   `adress` text NOT NULL,
   `phone` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Zrzut danych tabeli `zamowienia`
+--
+
+INSERT INTO `zamowienia` (`id`, `firstName`, `lastName`, `adress`, `phone`) VALUES
+(4, 'Konrad', 'Kućmierz', 'Dmowskiego', '222333444'),
+(5, 'Kacper', 'Kufel', 'Dmowskiego', '111222333');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -170,7 +213,7 @@ ALTER TABLE `zamowienia`
 -- AUTO_INCREMENT dla tabeli `dania`
 --
 ALTER TABLE `dania`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT dla tabeli `klienci`
@@ -182,13 +225,13 @@ ALTER TABLE `klienci`
 -- AUTO_INCREMENT dla tabeli `newsletter`
 --
 ALTER TABLE `newsletter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT dla tabeli `orderedfood`
 --
 ALTER TABLE `orderedfood`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT dla tabeli `personel`
@@ -206,7 +249,7 @@ ALTER TABLE `rezerwacje`
 -- AUTO_INCREMENT dla tabeli `zamowienia`
 --
 ALTER TABLE `zamowienia`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Ograniczenia dla zrzutów tabel

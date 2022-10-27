@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,6 +30,9 @@
         $q->bind_param('ii', $orderID, $foodid);
         $q->execute();
     }
+    $q2 = "UPDATE dania JOIN orderedfood ON foodid = dania.id SET times_ordered = times_ordered+1 WHERE dania.id = foodid";
+    $db->query($q2);
+    session_destroy();
     ?>
 </body>
 </html>

@@ -16,13 +16,16 @@
     </form>
     </div>
     <?php 
+    if(isset($_REQUEST['email'])){
     $db = new mysqli('localhost', 'root', '', 'ristorante');
     $email = $_REQUEST['email'];
     $q = $db->prepare('INSERT INTO newsletter(email) VALUES (?)');
     $q->bind_param('s', $email);
     $q->execute();
     $db->close();
-
+    echo "pomyślnie dodano email do newslettera!";
+    header('Refresh: 5; url="index.html"');
+    }
 
     ?>
 </body>
