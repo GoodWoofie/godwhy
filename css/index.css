@@ -36,22 +36,43 @@
     text-align: left;
     float: left;
 }
-.onas {
+#onas, #lokal, #kontakt {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     font-family: Verdana;
     display: flex;
     color: white;
-    font-size: 2em;
+    /*font-size: 2em;*/
 }
-.onass h4 {
+.onass h4, .lokall h4{
     text-align: center;
     font-size: 1.5em;
 }
-.onass {
+.onass, .lokall, .kontaktt {
     padding: 2.5%;
 }
-.onass p {
+.onass p, .lokall p {
     text-indent: 3%;
+}
+.linkeh {
+    text-align: center;
+}
+.linkeh a:link, .linkeh a:visited {
+    color: rgb(180, 12, 12);
+}
+.linkeh a:hover {
+    color: rgb(224, 17, 17);
+}
+.kontaktt{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.kontaktt p{
+    text-align: center;
+}
+table td {
+    padding: 5%;
 }

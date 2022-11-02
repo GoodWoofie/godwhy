@@ -3,6 +3,9 @@ body {
     background-color: rgb(24, 12, 5);
 }
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -28,11 +31,11 @@ li {
     display: inline;
 }
 li a {
-    color: rgb(255, 176, 176);
+    color: rgb(224, 17, 17);
     text-decoration: none;
 }
 li a:hover {
-    color: rgb(234, 134, 134);
+    color: rgb(180, 12, 12);
     border-bottom: 2px rgb(180, 12, 12) solid;
 }
 .newsletter {
@@ -40,6 +43,9 @@ li a:hover {
     text-align: right;
     padding: 20px;
     padding-right: 50px;
+}
+.newsletter a:link {
+    color: rgb(180, 12, 12);
 }
 form {
     display: inline;
