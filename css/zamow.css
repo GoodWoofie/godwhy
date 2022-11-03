@@ -1,0 +1,37 @@
+
+.main {
+    margin-left: 5%;
+    margin-top: 6%;
+    color: white;
+}
+.tabelka {
+    display: block;
+    width: 500px;
+}
+table {
+    font-family: Verdana;
+    color: white;
+    font-weight: bold;
+}
+.yes {
+    font-size: larger;
+    margin-left: 30px;
+    color: rgb(255, 239, 22);
+}
+table img {
+    height: 250px;
+}
+td:first-child {
+    background-color: rgba(180, 12, 12, 0.2);
+    text-align: center;
+    padding: 10px;
+}
+td:last-child {
+    padding-left: 30px;
+}
+td a:link,td a:visited {
+    color: white;
+}
+td a:hover {
+    color:grey
+}
