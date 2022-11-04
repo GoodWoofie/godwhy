@@ -1,0 +1,30 @@
+body {
+    color: white;
+}
+.main {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 200px;
+    font-family: Verdana;
+    margin-bottom: auto;
+}
+a:visited, a:link {
+    color: rgb(180, 12, 12);
+}
+a:hover{
+    color: rgb(224, 17, 17);
+}
+.wlochy {
+    position: relative;
+    width: 100%;
+}
+.guzior {
+    font-size: large;
+    padding: 20px;
+    color: white;
+    background-color: rgb(180, 12, 12);
+}
+.pls {
+    margin-left: 3%;
+    font-size: larger;
+}

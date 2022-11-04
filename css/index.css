@@ -43,7 +43,7 @@
     font-family: Verdana;
     display: flex;
     color: white;
-    /*font-size: 2em;*/
+    font-size: 1.5em;
 }
 .onass h4, .lokall h4{
     text-align: center;

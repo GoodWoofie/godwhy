@@ -1,0 +1,10 @@
+1.Dodaj ceny w menu (bo mi sie nie chce)
+2.Zmien nazwe admin.php by byla jakas nie do zgadniecia i daj to jako argument, ze strona jest tajna (np. m1k1r0npllyn13m1w3krw111.php)
+3.W adminie footer znika do voidu wtf. Jak nie wiesz to usun footer z admina i udawaj, ze go tam nigdy nie bylo 0-0
+4. Upewnij sie ze logo w pasku gornym wyglada ok, jest w globalu ustawiane.
+5.Jak klikasz zamow bez niczego w koszyku i bez danych to masz bialy ekran.
+6.Jak wszystko dodasz to tez (jak wiesz jak to edytowac to napisz "Złożono zamówienie!" i dodaj globalny styl z paskiem górnym)
+7.Dostosowujac rozmiary zwroc uwage na literówki ):
+8.Spraw by Kami dostała 6 (5 tez przejdzie, ale badz moim adwokatem ok?)
+9.Zdebugujcie koszyk pls, dla Konrada to pewnie będzie super łatwe.
+10.Jakaś wiadomość zwrotna jak pomyślnie złożysz zamówienie może?

@@ -7,4 +7,10 @@ body {
     margin-top: 6%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+}
+.wlochy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

@@ -49,5 +49,16 @@
 
     ?>
     </div>
+    <div class="wlochy">
+        <footer>
+            <div class="yezu">
+                <p>Ristorante Deliciosa<br>
+                    ulica Dmowskiego 16A w Gdańsku<br>
+                    numer telefonu: 000 000 000
+
+                <p> JM, KK, KK</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

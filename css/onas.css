@@ -1,12 +1,19 @@
 .main {
+    margin-top: 6% !important;
     background-image: url("../dania/Tony2.jpg");
+}
+.mmm {
+    background-image: url("../dania/winoman.jpeg");
+}
+.mam {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 150px;
-    margin-top: 6%;
-    color: white; }
-.a {   
+    color: white; 
+    margin-top: 2%;
+}
+.a, .b {   
     margin-right: auto;
     margin-left: auto;
     height: 150px;
@@ -31,6 +38,8 @@
     padding-bottom: 0%;
 }
 .textmainn {
+    font-family: Verdana;
+    font-size: 1.5em;
     display: block;
     padding-top: 5%;
     padding-right: 5%;

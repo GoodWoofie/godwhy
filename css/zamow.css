@@ -2,10 +2,14 @@
 .main {
     margin-top: 6%;
     color: white;
-}
-.main p {
     font-family: Verdana;
-    font-size: 1,5em;
+}
+.pno {
+    font-size: 2em;
+    margin-left: 10%;
+}
+.pno ~ p {
+    margin-left: 10%;
 }
 #tabelka {
     margin-left: 5%;
