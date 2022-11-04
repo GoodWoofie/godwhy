@@ -4,20 +4,22 @@ body {
     background-size: cover;
     background-position: center;
     height: 100%;
+    margin: 0px;
 }
 .ftlo{
     background-color: rgba(0, 0, 0, 0.5);
 }
-.main {
+.maina {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 5%;
     color: white;
+    margin-left: 0px;
 }
-.tabelka {
+#tabelka {
     display: block;
-    width: 500px;
+    width: 50%;
 }
 table {
     font-family: Verdana;
@@ -40,3 +42,4 @@ td:first-child {
 td:last-child {
     padding-left: 30px;
 }
+

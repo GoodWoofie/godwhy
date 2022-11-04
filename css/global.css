@@ -2,10 +2,7 @@ body {
     margin: 0px;
     background-color: rgb(24, 12, 5);
 }
-footer {
-    color: rgb(180, 12, 12);
-    background-color: black;
-}
+
 .header {
     position: fixed;
     top: 0;
@@ -63,4 +60,29 @@ form {
 }
 input {
     margin: 10px;
+}
+.wlochy {
+    background-image: url("../dania/pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer {
+    color: rgb(180, 12, 12);
+    width: 20%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    border-left: 2px rgb(180, 12, 12) solid;
+    border-right: 2px rgb(180, 12, 12) solid;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.yezu {
+    text-align: center;
 }

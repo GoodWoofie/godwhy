@@ -35,12 +35,4 @@
     padding-top: 5%;
     padding-right: 5%;
 }
-.wlochy {
-    background-image: url("../dania/pizza.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    color: white;
-    margin-top: 10px;
-}
+

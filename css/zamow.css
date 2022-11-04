@@ -1,12 +1,16 @@
 
 .main {
-    margin-left: 5%;
     margin-top: 6%;
     color: white;
 }
-.tabelka {
+.main p {
+    font-family: Verdana;
+    font-size: 1,5em;
+}
+#tabelka {
+    margin-left: 5%;
     display: block;
-    width: 500px;
+    width: 70%;
 }
 table {
     font-family: Verdana;
