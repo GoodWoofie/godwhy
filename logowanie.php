@@ -19,7 +19,7 @@
     <?php
     if(isset($_REQUEST['login']) && isset($_REQUEST['pass'])){
         $login = $_REQUEST['login'];
-        $pass = $_REQUEST['pass'];
+        $pass = hash('md5', $_REQUEST['pass']);
         $db = new mysqli('localhost','root','','ristorante');
         $q = $db->prepare("SELECT login, pass FROM personel WHERE login = ? AND pass = ?");
         $q->bind_param('ss', $login, $pass);
